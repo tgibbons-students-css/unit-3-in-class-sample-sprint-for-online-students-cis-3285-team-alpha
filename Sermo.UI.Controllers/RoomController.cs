@@ -41,6 +41,7 @@ namespace Sermo.UI.Controllers
         [HttpPost]
         public ActionResult Create(RoomViewModel model)
         {
+            // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Chad parr
             ActionResult result;
  
             if(ModelState.IsValid)
@@ -67,6 +68,7 @@ namespace Sermo.UI.Controllers
 
         [HttpPost]
         public ActionResult AddMessage(MessageViewModel messageViewModel)
+        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Chad Parr
         {
             ActionResult result;
 

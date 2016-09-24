@@ -24,7 +24,7 @@ namespace Sermo.UI.Controllers
             this.mapper = mapper;
         }
 
-        public IEnumerable<RoomViewModel> GetAllRooms()
+        public IEnumerable<RoomViewModel> GetAllRooms()// Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Chad Parr
         {
             var allRooms = new List<RoomViewModel>();
             var allRoomRecords = roomRepository.GetAllRooms();
@@ -37,6 +37,7 @@ namespace Sermo.UI.Controllers
 
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
         {
+            // Changes sprint one - I want to view the messages that have been sent to a room - Chad Parr
             var roomMessages = new List<MessageViewModel>();
             var roomMessageRecords = messageRepository.GetMessagesForRoomID(roomID);
             foreach(var messageRecord in roomMessageRecords)
@@ -46,7 +47,7 @@ namespace Sermo.UI.Controllers
             return roomMessages;
         }
 
-        public void CreateRoom(RoomViewModel roomViewModel)
+        public void CreateRoom(RoomViewModel roomViewModel)// Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Chad Parr
         {
             var roomRecord = mapper.MapRoomViewModelToRoomRecord(roomViewModel);
             roomRepository.CreateRoom(roomRecord.Name);
