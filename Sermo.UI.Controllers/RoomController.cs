@@ -69,6 +69,7 @@ namespace Sermo.UI.Controllers
         [HttpPost]
         public ActionResult AddMessage(MessageViewModel messageViewModel)
         // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Chad Parr
+        // Changes Sprint 1 -- I want to send plain text messages to other room members -- David Bohn
         {
             ActionResult result;
 

@@ -62,6 +62,7 @@ namespace Sermo.UnitTests
         [TestCase("")]
         [TestCase("    ")]
         public void PostCreateNewRoomWithInvalidRoomNameCausesValidationError(string roomName)
+        // Sprint 2 -- I want to filter message content so that it is appropriate -- David Bohn
         {
             var controller = CreateController();
 

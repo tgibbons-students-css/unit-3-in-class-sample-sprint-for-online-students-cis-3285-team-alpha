@@ -1,8 +1,4 @@
-﻿
-CREATE DATABASE Sermo;
-
-USE Sermo;
-GO;
+﻿USE Sermo;
 
 CREATE TABLE room
 (
