@@ -19,6 +19,9 @@ namespace Sermo.UnitTests
     {
         [Test]
         public void ConstructingWithoutRoomRepositoryThrowsArgumentNullException()
+        //note: Matt Goodson : Assignment says to update ConstructingWithoutRepositoryThrowsArgumentNullException() but this does not exist so I commented on this one
+        // Changes for Sprint # -- User Story -- Developer's Name
+        // Changes for Sprint 1 -- 1.I want to create rooms for categorizing conversations -- Matt Goodson
         {
             Assert.Throws<ArgumentNullException>(() => new RepositoryRoomViewModelService(null, mockMessageRepository.Object, mockRoomViewModelMapper.Object));
         }
