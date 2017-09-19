@@ -20,6 +20,8 @@ namespace Sermo.Data.Mongo
         }
 
         public IEnumerable<RoomViewModel> GetAllRooms()
+        // Changes for Sprint # -- User Story -- Developer's Name
+        // Changes for Sprint 2 -- 3.I want to serve hundreds of users concurrently -- Matt Goodson
         {
             var roomsCollection = GetRoomsCollection();
             return roomsCollection.FindAll();
@@ -45,6 +47,8 @@ namespace Sermo.Data.Mongo
         }
 
         private MongoCollection<MessageViewModel> GetMessagesCollection()
+        // Changes for Sprint # -- User Story -- Developer's Name
+        // Changes for Sprint 2 -- 3.I want to serve hundreds of users concurrently -- Matt Goodson
         {
             var database = GetDatabase();
             var messagesCollection = database.GetCollection<MessageViewModel>(MessagesCollection);
